@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drift Management Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Drift Management Dashboard</h1>
+            <p>Track configuration changes and security-relevant drift from Azure & Entra.</p>
+        </header>
+
+        <div class="controls">
+            <button id="refresh-btn" title="Refresh Data">🔄 Refresh</button>
+        </div>
+
+        <section>
+            <h2>Latest Configuration Snapshots</h2>
+            <button class="toggle-button" data-target="snapshot-block">Hide</button>
+            <div id="snapshot-block">
+                {% if snapshots %}
+                    <pre class="code-block">{{ snapshots | tojson(indent=4) }}</pre>
+                {% else %}
+                    <p>No snapshots found.</p>
+                {% endif %}
+            </div>
+        </section>
+
+        <section>
+            <h2>Drift Report</h2>
+            <button class="toggle-button" data-target="drift-block">Hide</button>
+            <div id="drift-block">
+                {% if drift %}
+                    {% if drift | length > 0 %}
+                        <pre class="code-block">{{ drift | tojson(indent=4) }}</pre>
+                    {% else %}
+                        <p>No drift detected between the last snapshots.</p>
+                    {% endif %}
+                {% else %}
+                    <p>No drift data available.</p>
+                {% endif %}
+            </div>
+        </section>
+
+        <footer>
+            <p>Project by Timothy Omamegbe  · Tech Stack · Flask · Azure SDK · MongoDB · DeepDiff</p>
+        </footer>
+    </div>
+
+    <script src="../static/app.js"></script>
+</body>
+</html>
