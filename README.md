@@ -52,10 +52,10 @@ The Drift Management Service consists of the following components:
 
 ```mermaid
 graph TD
-    A[User / Admin] -->|View Dashboard| B[Frontend (HTML/CSS/JS)]
+    A[User / Admin] -->|View Dashboard| B[(HTML/CSS/JS)]
     B -->|API Calls| C[Flask Backend]
-    C --> D[Polling Engine (Azure SDK)]
-    C --> E[Entra Log Ingestion (Graph API)]
+    C --> D[Polling Engine - Azure SDK]
+    C --> E[Entra Log Ingestion - Graph API]
     C --> F[Drift Detection Module]
     D --> G[MongoDB]
     E --> G
