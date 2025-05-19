@@ -69,14 +69,14 @@ graph TD
 
 ### 1. Clone the Repository
 
-- powersheel
-git clone https://github.com/allostimzy/blindSpotX_taskTwo.git
-cd blindSpotX_taskTwo
-python -m venv venv
-venv/bin/activate
-pip install -r requirements.txt
-Create a .env File (env available)
-python app.py
+- powershell
+- git clone https://github.com/allostimzy/blindSpotX_taskTwo.git
+- cd blindSpotX_taskTwo
+- python -m venv venv
+- venv/bin/activate
+- pip install -r requirements.txt
+- Create a .env File (env available)
+- python app.py
 
 ## Usage
 
