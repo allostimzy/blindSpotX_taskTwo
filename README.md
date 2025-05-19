@@ -70,7 +70,7 @@ graph TD
 ### 1. Clone the Repository
 
 - powersheel
-git clone https://github.com/yourusername/blindSpotX_taskTwo.git
+git clone https://github.com/allostimzy/blindSpotX_taskTwo.git
 cd blindSpotX_taskTwo
 python -m venv venv
 venv/bin/activate
