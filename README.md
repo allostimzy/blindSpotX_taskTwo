@@ -1,6 +1,6 @@
 # Drift Management Service
 
-The Drift Management Service is a Python-based system designed to monitor, detect, and report configuration drifts across Azure environments. It securely ingests metadata and Entra ID sign-in logs, compares configuration snapshots over time, and surfaces meaningful changes — particularly those relevant to security.
+The Drift Management Service is a Python-based system designed to monitor, detect, and report configuration drifts across Azure environments. It securely ingests metadata and Entra ID sign-in logs, compares configuration snapshots over time, and surfaces meaningful changes, particularly those relevant to security.
 
 The system features:
 - Periodic polling of Azure configuration data
