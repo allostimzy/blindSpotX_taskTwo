@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <button id="logout-btn">Logout</button>
+
+  <div id="admin-content">
+    <!-- Here you can show admin-only content -->
+    <p>Welcome, Admin!</p>
+
+    <h2>Registered Users</h2>
+    <table id="users-table" border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody id="users-table-body">
+        <!-- Rows will be inserted here by admin.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="../static/js/admin.js"></script>
+</body>
+</html>

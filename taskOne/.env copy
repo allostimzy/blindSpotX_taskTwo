@@ -1,0 +1,6 @@
+MONGO_URI=mongodb+srv://timothyomamegbe93:xxxxxxxxxxx@cluster0.tluyyrv.mongodb.net/main?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxx
+GOOGLE_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+DEFAULT_ADMIN_EMAIL=admin@blackspotx.com
+DEFAULT_ADMIN_PASSWORD=admin123
+GOOGLE_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

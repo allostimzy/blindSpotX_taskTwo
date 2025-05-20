@@ -1,0 +1,5 @@
+MONGO_URI=mongodb+srv://timothyomamegbe93:xxxxxx@cluster0.tluyyrv.mongodb.net/Task2?retryWrites=true&w=majority&appName=Cluster0
+AZURE_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxx
+AZURE_CLIENT_SECRET=xxxxxxxxxxxxxxxxxxxxxxx
+AZURE_TENANT_ID=xxxxxxxxxxxxxxxxxxxxxxxx
+AZURE_SUBSCRIPTION_ID=xxxxxxxxxxxxxxxxxxx

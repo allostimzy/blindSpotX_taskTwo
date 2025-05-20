@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Admin & User</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <h1>Login</h1>
+
+  <section id="admin-login-section">
+    <h2>Admin Login</h2>
+    <form id="admin-login-form">
+      <label>
+        Email:
+        <input type="email" id="admin-email" required />
+      </label>
+      <label>
+        Password:
+        <input type="password" id="admin-password" required />
+      </label>
+      <button type="submit">Login as Admin</button>
+    </form>
+    <div id="admin-login-msg"></div>
+  </section>
+
+  <section id="user-login-section">
+    <h2>User Login (Google)</h2>
+    <div id="g_id_onload"
+         data-client_id="{{ google_client_id }}"
+         data-context="signin"
+         data-ux_mode="popup"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin"
+         data-type="standard"
+         data-shape="rectangular"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
+    <div id="google-login-msg"></div>
+  </section>
+
+  <script src="../static/js/main.js"></script>
+</body>
+</html>
+
+

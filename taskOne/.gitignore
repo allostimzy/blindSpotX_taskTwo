@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+
+# Environment variables file (contains secrets)
+.env
+
+# Virtual environment directories
+venv/
+
+
+
+# Flask instance folder (optional, if used)
+instance/
+
+# Logs
+*.log
+
+# MongoDB dump files or backups
+dump/
+*.bak
+
+
+# IDE/editor specific files
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+
+# PEP 582; used by e.g. python-pdm
+__pypackages__/
