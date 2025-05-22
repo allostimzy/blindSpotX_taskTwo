@@ -17,12 +17,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 @dataclass
+
 class DriftSeverity:
     CRITICAL: float = 0.8
     HIGH: float = 0.6
     MEDIUM: float = 0.4
     LOW: float = 0.2
 
+# This class is responsible for detecting drift in data distributions.
+# It uses KL divergence to measure the difference between two distributions.
 class DriftDetector:
     def __init__(self, tolerance: float = 0.1):
         self.tolerance = tolerance
@@ -56,6 +59,7 @@ class DriftDetector:
         logger.debug("Calculated drift score: %f", drift_score)
         return float(drift_score)
 
+#     def log_drift_detection(self, drift_score: float, severity: str):
     def determine_severity(self, drift_score: float) -> str:
         """Determine severity level based on drift score."""
         if drift_score >= self.severity_levels.CRITICAL:
